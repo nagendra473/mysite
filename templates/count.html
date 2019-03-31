@@ -1,0 +1,15 @@
+<h1> Result Page </h1>
+
+<h2>YOUR TEXT ENTERED</h2>
+{{msg}}
+<h3>this text contain ={{length}} words</h3>
+
+<h3>count </h3>
+{{abc}}
+<hr/>
+<b>all words count</b>
+<ol>
+  {% for key,value in abc.items %}
+   <li>{{key}}:{{value}}</li>
+   {% endfor %}
+</ol>

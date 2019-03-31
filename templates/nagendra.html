@@ -1,0 +1,28 @@
+<h1>nagendra</h1>
+<a href="{% url 'aboutus' %}">About us</a>
+<p>
+patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\KISHORE\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\KISHORE\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\urls\resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\KISHORE\AppData\Local\Programs\Python\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\KISHORE\Desktop\python\mysite\mysite\urls.py", line 28, in <module>
+    path('nagendra/',asd.nagendra,name='nagendra'),
+AttributeError: module 'mysite.asd' has no attribute 'nagendra'
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 18, 2019 - 10:43:33
+Django version 2.1.7, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.</p>
+
+<a href="{% url 'countwords' %}">count no words</a>
